@@ -1,0 +1,32 @@
+body{
+    margin-left: 0;
+    padding: 0;
+    background: #292929;
+}
+h1{
+    text-align: center;
+    color: #fff;
+    font-family: 'raleway';
+    margin: 25px;
+}
+
+.imgbox{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    transition: 0.5s;
+    filter: grayscale(150%);
+}
+
+.imgbox img{
+    height: 100%;
+    width: 100%;
+}
+
+.imgbox:hover{
+    filter:none;
+}

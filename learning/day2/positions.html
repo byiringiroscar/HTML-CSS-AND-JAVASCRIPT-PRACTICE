@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positions</title>
+
+    <style>
+            .dummy{
+                height: 1800px;
+                width: 800px;
+                border: 10px solid black;
+                margin: 100px;
+                margin-left: 500px;
+                position: relative;
+            }
+            .dumb{
+                width: 500px;
+                height: 600px;
+                border: 10px solid gray;
+                margin: 100px;
+                
+            }
+            .one{
+                width: 150px;
+                height: 100px;
+                background-color: red;
+                font-size: 40px;
+            }
+            .two{
+                width: 150px;
+                height: 150px;
+                background-color: green;
+                font-size: 40px;
+                position: sticky;  
+                top: 50px;
+            }
+            .three{
+                width: 150px;
+                height: 150px;
+                background-color: blue;
+                font-size: 40px;
+            }
+            
+
+    </style>
+
+
+
+</head>
+<body>
+
+
+    <div class="dummy">
+        <div class="dumb">
+            <div class="one">1</div>
+            <div class="two">2</div>
+            <div class="three">3</div>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,47 @@
+.navbar {
+    background-color: rgb(190, 49, 68) !important;
+    a{
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+}
+
+#welcome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(86, 86, 86);
+}
+
+#welcome-heading{
+    text-transform: capitalize;
+    color: white;
+    text-align: center;
+}
+
+#projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(69, 86, 125);
+    padding: 60px;
+}
+
+.item{
+    img{
+        width: 100%;
+        padding: 20px;
+    }
+
+}
+
+.project-title{
+    background-color: rgb(31, 30, blue);
+    margin-right: 5px;
+}

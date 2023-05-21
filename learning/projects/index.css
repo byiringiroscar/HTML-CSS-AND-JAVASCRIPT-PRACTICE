@@ -1,0 +1,210 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.header{
+    width: 100%;
+    height: 70px;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+}
+
+.header_container{
+    width: 80%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 15%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.nav{
+    width: 25%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-links{
+    width: 100%;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.nav-item{
+    cursor: pointer;
+}
+
+/* banner css */
+.banner{
+    width: 100%;
+    height: 500px;
+    background-color: #FFFFFF;
+    overflow: hidden;
+    display: flex;
+}
+
+.banner-details{
+    height: 500px;
+    width: 70%;
+    /* background-color: grey; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-text{
+    width: 70%;
+    height: 380px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+}
+.banner-title{
+    font-size: 65px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.highlight{
+    width: 60%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 15px solid gray;
+    font-size: 90px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: gray;
+}
+
+.branding{
+    width: 100%;
+    /* height: 600px; */
+    background-color: #D3D3D3;
+    padding: 50px 10%;  
+    display: flex;
+    column-gap: 5%;
+    padding-top: 50px;
+
+}
+
+.branding-1{
+    width: 30%;
+    height: 450px;
+    background-color: grey;
+    background-image: url('images/image7.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 5%;
+    display: flex;
+    align-items: flex-end;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Segoe UI;
+    color: white;
+    justify-content: center;
+    text-transform: uppercase;
+}
+.branding-2{
+    width: 30%;
+    height: 450px;
+    background-color: grey;
+    background-image: url('images/image3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 5%;
+    padding: 100px 5%;
+    display: flex;
+    align-items: flex-end;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Segoe UI;
+    color: white;
+    justify-content: center;
+    text-transform: uppercase;
+    
+}
+.branding-3{
+    width: 30%;
+    height: 450px;
+    background-color: #e07e88;
+    /* background-image: url('images/image3.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5%;
+    font-size: 40px;
+    font-family: Segoe UI;
+}
+
+.brand-title{
+    background-color: gray;
+    color: white;
+}
+
+.products{
+    width: 100%;
+    background-color: whitesmoke;
+    padding: 50px 10%;
+    display: flex;
+    justify-content: space-between;
+}
+.product{
+    padding-bottom: 9px;
+    width: 20%;
+    background-color: rgb(231, 229, 229);
+}
+
+.product-img{
+    height: 300px;
+    width: 100%;
+    background-color: blue;
+    overflow: hidden;
+}
+.pro-img{
+    width: 100%;
+}
+.product-details{
+    padding: 10px;
+    font-family: Segoe UI;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+.btn-1{
+    padding: 8px 9px;
+    background-color: grey;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+.btn-2{
+    padding: 8px 9px;
+    background-color: #e07e88;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 5px;
+}

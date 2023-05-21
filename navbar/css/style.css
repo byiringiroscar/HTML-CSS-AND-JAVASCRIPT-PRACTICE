@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,400;1,600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.box{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/banner.jpg');
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+    align-items: center;
+    height: 70px;
+}
+.logo{
+    font-size: 30px;
+    color: white;
+}
+
+.logo span{
+    color: orangered;
+    font-family: 'Lobster', cursive;
+}
+
+/* display: inline-block    ---- work as display flex with column  gap maybe 20px */
+
+nav ul li{
+    list-style: none;
+    display: inline-block;   
+    padding: 10px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+nav ul li a:hover{
+    color: orangered;
+    transition: 0.5s;   /*  smoth in hover */
+}
+nav button{
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    border: none;
+    background-color: orangered;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+nav button:hover{
+    transition: 0.5s;
+    transform: scale(1.1); /* it zoom in and out  */
+}
+.banner-text{
+    color: white;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    transition: 0.5s;
+
+}
+.banner-text h1{
+    font-size: 50px;
+    text-transform: uppercase;
+}
+.banner-text span{
+    color: orangered;
+    font-family: 'Lobster', cursive;
+}
+.banner-text p{
+    font-size: 25px;
+}

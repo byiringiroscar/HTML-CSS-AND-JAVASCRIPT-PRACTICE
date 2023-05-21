@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
+ul li{
+    list-style: none;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #ccc;
+}
+.btn{
+    display: none;
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    background-color: #2f3542;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    user-select: none;
+}
+
+
+.logo{
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: white;
+}
+
+
+
+
+.navbar ul li{
+    float: left;
+    position: relative;
+    
+}
+
+.navbar ul li a{
+    font-size: 20px;
+    padding: 20px;
+    display: block;
+    color: white;
+}  
+
+.navbar ul li a:hover{
+    background-color: #57606f;
+}
+
+.navbar ul li ul{
+    position: absolute;
+    width: 200px;
+    background-color: white;
+    display: none;
+}
+
+
+.navbar ul li ul li a{
+    color: #333;
+}
+.navbar ul li ul li a:hover{
+    color: white;
+}
+
+.navbar ul li ul li{
+    width: 100%;
+    border-top: 1px solid #ccc;
+}
+
+.navbar ul li:hover > ul,
+.navbar ul li:focus-within > ul
+{
+    display: block;
+}
+
+.navbar ul li ul li ul{
+    left: 202px;
+    top: 0;
+   
+}
+
+#toggle{
+    display: none;
+}
+.btn{
+    font-size: 30px;
+    color: white;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 991px) {
+    .navbar{
+        position: absolute;
+        background-color:#2f3542;
+        top: 100%;
+        left: 0;
+        right: 0;
+        border-top: 1px solid rgba(113, 120, 134, 0.7);
+        display: none;
+        transition: 0.5s;
+    }
+    .navbar ul li{
+        width: 100%;
+        
+    }
+    .navbar ul li ul{
+        position: relative;
+        width: 100%;
+    }
+    .navbar ul li ul li{
+        background-color: #ccc;
+    }
+    .navbar ul li ul li ul{
+        width: 100%;
+        left: 15px;
+    }
+
+    #toggle:checked ~ .navbar{
+        display: block;
+
+    }
+    .btn{
+        display: block;
+    }
+}

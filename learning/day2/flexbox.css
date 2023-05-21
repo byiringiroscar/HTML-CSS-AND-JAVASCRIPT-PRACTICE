@@ -1,0 +1,42 @@
+.dummy {
+    width: 1600px;
+    height: 800px;
+    background-color: lightgray;
+    font-size: 40px;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-evenly;  */
+    /* align-items: center; */ 
+    /* align-content: flex-start;    */
+    flex-wrap: wrap;   
+}
+
+img{
+    width: 150px;
+    height: 150px;
+}
+
+
+.one{
+    width: 150px;
+    height: 150px;
+    background-color: red;
+}
+.two{
+    width: 150px;
+    height: 150px;
+    background-color: green;
+    align-self: center;  
+}
+
+.three{
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+}
+
+.four{
+    width: 150px;
+    height: 150px;
+    background-color: yellowgreen;
+}

@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul li{
+    list-style: none;
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-header{
+    display: flex;
+    background: #2f3640;
+    height: 60px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 20px;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.logo:hover{
+    color: #FFC312;
+}
+
+.right-links{
+    display: flex;
+    gap: 25px;
+}
+
+.right-links a{
+    color: white;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+.right-bar{
+    display: none;
+}
+
+.active a{
+    color: #FFC312 !important;
+}
+
+
+@media(max-width:992px) {
+    .main-header .right-side{
+        display: none;
+    }
+    .right-bar{
+        display: block;
+    }
+    
+}
+.right-bar{
+    width: 35px;
+    background-color: 35px;
+    background: none;
+    border: none;
+}
+
+.right-bar::before,
+.right-bar .bar,
+.right-bar::after
+{
+    content: "";
+    width: 100%;
+    height: 3px;
+    display: block;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.5s;
+    border-radius: 2px;
+
+}
+
+/* responsivness continue on mobile */
+
+.mobile-nav{
+    background-color: #333;
+    position: fixed;
+    top: 60px;
+    width: 100%;
+    /* we put this height only as testing but because we add this right =100% it is going to disappear to right side*/
+    height: 100%; 
+    right: 100%;
+    transition: 0.6s;
+    z-index: 99;
+    display: none;
+}
+
+.mobile-nav .right-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 100vh;
+}
+
+
+
+
+
+/* trying to put  x when we are getting menu bar */
+
+
+
+.right-bar.is-active .bar{
+    opacity: 0;
+}
+
+
+.right-bar.is-active::before{
+    transform: rotate(-45deg) translate(-8px, 7px);
+}
+.right-bar.is-active::after{
+    transform: rotate(45deg) translate(-6px, -6px);
+}
+
+
+.mobile-nav.is-active{
+    right: 0;
+}
+
+.banner{
+    width: 100vw;
+    height: calc(100vh - 60px);
+    background: url('../images/repp.jpg');
+    background-position: center;
+    background-size: 100% 100%;
+   
+    filter: contrast(1.2);
+    
+}
+
+.banner h1{
+    color: white;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 45px;
+    mix-blend-mode: overlay;
+    text-align: right;
+
+}
+
+
+.section{
+    width: 100vw;
+    height: 100vh;
+    background-color: aquamarine;
+}
+
+
+/* responsivenss parrt start */
+
+@media(max-width:992px) {
+    .main-header .right-side{
+        display: none;
+    }
+    .right-bar{
+        display: block;
+    }
+    .mobile-nav{
+        display: block;
+    }
+    .banner h1{
+        font-size: 25px;
+    }
+    .banner{
+        background: url('../images/pcwork.jpg');
+        background-position: center;
+        background-size: 100% 100%;
+    }
+    
+}
